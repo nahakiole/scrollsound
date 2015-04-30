@@ -2,7 +2,28 @@
 
 ## Usage
 
-TODO
+```html
+<audio src="sound/fire.mp3" autoplay="" id="fire" loop="" muted=""></audio>
+<div class="background-image-wrapper">
+    <img src="img/fire.jpg" alt="Fire" id="fire-img"/>
+
+    <div class="heading">
+        <h1>Lorem Ipsum</h1>
+        <p>Sit amet, consectetur adipisicing elit.</p>
+    </div>
+</div>
+```
+
+```javascript
+$('#fire').scrollSound({
+        getVolume: function(top){
+            console.log("Top Fire"+top);
+            var volume = Math.min(Math.abs(top - $('#fire-img').offset().top), $('#fire-img').height()*2);
+            return 1 - (volume / ($('#fire-img').height()*2));
+        }
+    });
+```
+
 
 ## Contributing
 
