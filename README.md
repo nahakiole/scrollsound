@@ -27,7 +27,7 @@ $('#fire').scrollSound({
 
 ## Contributing
 
--> CONTRIBUTING.md
+[Contributing Manual](CONTRIBUTING.md)
 
 ## License
 
