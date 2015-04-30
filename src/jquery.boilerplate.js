@@ -1,6 +1,3 @@
-// the semi-colon before function invocation is a safety net against concatenated
-// scripts and/or other plugins which may not be closed properly.
-;
 (function ($, window, document, undefined) {
 
     // undefined is used here as the undefined global variable in ECMAScript 3 is
@@ -40,7 +37,7 @@
     Plugin.prototype = {
         init: function () {
             $(window).scroll(this.onScroll.bind(this));
-            $(window).trigger('scroll');
+            $(window).trigger("scroll");
             // Place initialization logic here
             // You already have access to the DOM element and
             // the options via the instance, e.g. this.element
@@ -51,8 +48,7 @@
         },
         onScroll: function () {
             var that = this;
-            var volume = this.options.getVolume($(window).scrollTop());
-            $(this.element).animate({volume:volume}, 10, function(){
+            $(this.element).animate({volume:this.options.getVolume($(window).scrollTop())}, 10, function(){
                 that.element.muted = false;
             });
             // some logic
