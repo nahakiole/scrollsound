@@ -27,7 +27,6 @@
         };
 
 
-
     // The actual plugin constructor
     function Plugin(element, options) {
 
@@ -56,7 +55,7 @@
         },
         onScroll: function () {
             var that = this;
-            $(this.element).animate({volume:this.options.getVolume($(window).scrollTop())}, 10, function(){
+            $(this.element).animate({volume: Math.min(1, Math.max(0, this.options.getVolume($(window).scrollTop())))}, 10, function () {
                 that.element.muted = false;
             });
             // some logic
