@@ -1,5 +1,7 @@
 # Scrollsound jQuery Plugin
 
+Demo: http://nahakiole.github.io/scrollsound/
+
 ## Usage (Simple Example)
 
 ### HTML
