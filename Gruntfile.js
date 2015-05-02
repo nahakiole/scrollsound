@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
 		// Lint definitions
 		jshint: {
-			files: ["src/jquery.boilerplate.js"],
+			files: ["src/jquery.scrollsound.js"],
 			options: {
 				jshintrc: ".jshintrc"
 			}
