@@ -1,5 +1,7 @@
 # Scrollsound Plugin
 
+A javascript plugin which makes images play background noise when they are visible.
+
 Demo: http://nahakiole.github.io/scrollsound/
 
 ## Usage
@@ -11,6 +13,10 @@ The sound will be heard while the image is visible.
 ```html
 <img src="img/forest.jpg" alt="Forest" id="forest-img" sound="sound/forest.mp3" is="img-singing">
 ```
+
+### Dependencies
+
+For this to work in browser which don't support webcomponents yet, you have to include the polyfill from http://webcomponents.org/
 
 ## Contributing
 

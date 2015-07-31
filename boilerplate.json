@@ -1,0 +1,28 @@
+{
+  "name": "scrollsound",
+  "title": "ScrollSound",
+  "description": "A javascript plugin which makes images play background noise when they are visible.",
+  "keywords": [
+    "plugins"
+  ],
+  "version": "0.2",
+  "author": {
+    "name": "Robin Glauser",
+    "email": "robin.glauser@gmail.com",
+    "url": "https://github.com/nahakiole"
+  },
+  "maintainers": [
+    {
+      "name": "Robin Glauser",
+      "email": "robin.glauser@gmail.com",
+      "url": "https://github.com/nahakiole"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "bugs": "https://github.com/nahakiole/scrollsound",
+  "download": "https://github.com/nahakiole/scrollsound/archive/master.zip"
+}

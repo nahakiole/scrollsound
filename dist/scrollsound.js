@@ -1,6 +1,6 @@
 /*
- *  jQuery ScrollSound - v0.1
- *  A jQuery Plugin to set the volume of a video or audio element based on the distance from the element.
+ *  ScrollSound - v0.2
+ *  A javascript plugin which makes images play background noise when they are visible.
  *  
  *
  *  Made by Robin Glauser
@@ -29,3 +29,4 @@
     };
     document.registerElement("img-singing", {prototype: XScrollsoundPrototype, extends: "img"});
 })( window, document);
+
