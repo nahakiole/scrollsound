@@ -1,4 +1,4 @@
-# Scrollsound jQuery Plugin
+# Scrollsound Plugin
 
 Demo: http://nahakiole.github.io/scrollsound/
 
@@ -6,27 +6,8 @@ Demo: http://nahakiole.github.io/scrollsound/
 
 ### HTML
 ```html
-<audio src="sound/fire.mp3" autoplay="" id="fire" loop="" muted=""></audio>
-<div class="background-image-wrapper">
-    <img src="img/fire.jpg" alt="Fire" id="fire-img"/>
-
-    <div class="heading">
-        <h1>Lorem Ipsum</h1>
-        <p>Sit amet, consectetur adipisicing elit.</p>
-    </div>
-</div>
+    <img src="img/forest.jpg" alt="Forest" id="forest-img" sound="sound/forest.mp3" is="img-singing">
 ```
-
-### Javascript
-```javascript
-$('#fire').scrollSound({
-        getVolume: function(top){
-            var volume = Math.min(Math.abs(top - $('#fire-img').offset().top), $('#fire-img').height()*2); // Calculate volume from scrollposition
-            return 1 - (volume / ($('#fire-img').height()*2)); // Return volume
-        }
-    });
-```
-
 
 ## Contributing
 

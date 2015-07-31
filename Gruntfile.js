@@ -20,8 +20,8 @@ module.exports = function(grunt) {
 		// Concat definitions
 		concat: {
 			dist: {
-				src: ["src/jquery.scrollsound.js"],
-				dest: "dist/jquery.scrollsound.js"
+				src: ["src/scrollsound.js"],
+				dest: "dist/scrollsound.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 
 		// Lint definitions
 		jshint: {
-			files: ["src/jquery.scrollsound.js"],
+			files: ["src/scrollsound.js"],
 			options: {
 				jshintrc: ".jshintrc"
 			}
@@ -39,8 +39,8 @@ module.exports = function(grunt) {
 		// Minify definitions
 		uglify: {
 			my_target: {
-				src: ["dist/jquery.scrollsound.js"],
-				dest: "dist/jquery.scrollsound.min.js"
+				src: ["dist/scrollsound.js"],
+				dest: "dist/scrollsound.min.js"
 			},
 			options: {
 				banner: "<%= meta.banner %>"
