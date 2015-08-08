@@ -7,7 +7,7 @@
         audio.loop = true;
         audio.volume = 0;
         function animateSound() {
-            var viewportOffset = that.getBoundingClientRect(), top = viewportOffset.top, left = viewportOffset.left, modifier = -0.05;
+            var viewportOffset = that.getBoundingClientRect(), top = viewportOffset.top, left = viewportOffset.left, modifier = -0.01;
             if (top + that.clientHeight > 0 && left + that.clientWidth > 0 && top - window.innerHeight < 0 && left - window.innerWidth < 0) {
                 modifier = 0.01;
             }
