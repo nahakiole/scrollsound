@@ -7,7 +7,7 @@ Demo: http://nahakiole.github.io/scrollsound/
 ## Usage
 
 Create a new img tag and add a is="img-singing" attribute and a attribute sound="sound/forest.mp3".
-The sound will be heard while the image is visible.
+The sound will be heard while the image is visible on the screen.
 
 ### HTML
 ```html
